@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Solar</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+</head>
+<body>
+
+    <!--Header/ INfo / Solar system-->
+
+    <div id="container" class="container">
+        <header class="menu">
+            <div class="logo">
+                <p class="logo--name">
+                    Juan <span>Developer</span>
+                </p>
+                <img id="burger" src="img/hamburguesa.png" alt="Icon menu">
+            </div>
+            <nav id="menu--navegation" class="menu--navegation">
+                <ul class="navegation">
+                    <li><a href="#universe">Inicio</a></li>
+                    <li><a href="#container--planets">Planetas</a></li>
+                    <li>
+                        <form class="form">
+                            <label for="buscar"><img src="img/lupa.svg" alt="Icon Lupa"></label>
+                            <input type="text" name="buscar" id="buscar" placeholder="Buscar..">
+                        </form>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <aside class="universe" id="universe">
+            <div class="container--universe">
+                <div class="universe--info">
+                    <h1>Sistema Solar</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam quos officiis reprehenderit ipsum earum, veritatis iure cumque ipsa perspiciatis inventore.</p>
+                    <div class="btn--info">
+                        <a href="#">Leer más</a>
+                    </div>
+                </div>
+                <ul class="planets">
+                    <li>
+                        <picture>
+                            <source srcset="img/sistema.webp" type="img/webp">
+                            <source srcset="img/sistema.png" type="img/png">
+                            <img src="img/sistema.png" alt="System Image">
+                        </picture>
+                    </li>
+
+                    <li>
+                        <picture>
+                            <source srcset="img/mercurio.webp" type="img/webp">
+                            <source srcset="img/mercurio.png" type="img/png">
+                            <img src="img/mercurio.png" alt="System Image">
+                        </picture>
+                    </li>
+
+                    <li>
+                        <picture>
+                            <source srcset="img/venus.webp" type="img/webp">
+                            <source srcset="img/venus.png" type="img/png">
+                            <img src="img/venus.png" alt="System Image">
+                        </picture>
+                    </li>
+
+                    <li>
+                        <picture>
+                            <source srcset="img/tierra.webp" type="img/webp">
+                            <source srcset="img/tierra.png" type="img/png">
+                            <img src="img/tierra.png" alt="System Image">
+                        </picture>
+                    </li>
+
+                    <li>
+                        <picture>
+                            <source srcset="img/marte.webp" type="img/webp">
+                            <source srcset="img/marte.png" type="img/png">
+                            <img src="img/marte.png" alt="System Image">
+                        </picture>
+                    </li>
+
+                    <li>
+                        <picture>
+                            <source srcset="img/jupiter.webp" type="img/webp">
+                            <source srcset="img/jupiter.png" type="img/png">
+                            <img src="img/jupiter.png" alt="System Image">
+                        </picture>
+                    </li>
+
+                    <li>
+                        <picture>
+                            <source srcset="img/saturno.webp" type="img/webp">
+                            <source srcset="img/saturno.png" type="img/png">
+                            <img src="img/saturno.png" alt="System Image">
+                        </picture>
+                    </li>
+
+                    <!-- Aqui va urano
+                    <li>
+                        <picture>
+                            <source srcset="img/urano.webp" type="img/webp">
+                            <source srcset="img/urano.png" type="img/png">
+                            <img src="img/urano.png" alt="System Image">
+                        </picture>
+                    </li>
+                    -->
+
+                    <li>
+                        <picture>
+                            <source srcset="img/neptuno.webp" type="img/webp">
+                            <source srcset="img/neptuno.png" type="img/png">
+                            <img src="img/neptuno.png" alt="System Image">
+                        </picture>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <!--Planets-->
+
+    <main id="container--planets" class="container--planets">
+        <ul class="list--planets">
+
+            <li>
+                <picture>
+                    <source srcset="planetas/mercurio.webp" type="img/webp">
+                    <source srcset="planetas/mercurio.png" type="img/png">
+                    <img width="100" height="100" src="planetas/mercurio.png" alt="System Image">
+                </picture>
+                <p>Mercurio</p>
+            </li>
+
+            <li>
+                <picture>
+                    <source srcset="planetas/venus.webp" type="img/webp">
+                    <source srcset="planetas/venus.png" type="img/png">
+                    <img width="100" height="100" src="planetas/venus.png" alt="System Image">
+                </picture>
+                <p>Venus</p>
+            </li>
+
+            <li>
+                <picture>
+                    <source srcset="planetas/tierra.webp" type="img/webp">
+                    <source srcset="planetas/tierra.png" type="img/png">
+                    <img width="100" height="100" src="planetas/tierra.png" alt="System Image">
+                </picture>
+                <p>Tierra</p>
+            </li>
+
+            <li>
+                <picture>
+                    <source srcset="planetas/marte.webp" type="img/webp">
+                    <source srcset="planetas/marte.png" type="img/png">
+                    <img width="100" height="100" src="planetas/marte.png" alt="System Image">
+                </picture>
+                <p>Marte</p>
+            </li>
+
+            <li>
+                <picture>
+                    <source srcset="planetas/jupiter.webp" type="img/webp">
+                    <source srcset="planetas/jupiter.png" type="img/png">
+                    <img width="100" height="100" src="planetas/jupiter.png" alt="System Image">
+                </picture>
+                <p>Jupiter</p>
+            </li>
+
+            <li>
+                <picture>
+                    <source srcset="planetas/saturno.webp" type="img/webp">
+                    <source srcset="planetas/saturno.png" type="img/png">
+                    <img width="100" height="100" src="planetas/saturno.png" alt="System Image">
+                </picture>
+                <p>Saturno</p>
+            </li>
+
+            
+            <li>
+                <picture>
+                    <source srcset="planetas/urano.webp" type="img/webp">
+                    <source srcset="planetas/urano.png" type="img/png">
+                    <img width="100" height="100" src="planetas/urano.png" alt="System Image">
+                </picture>
+                <p>Urano</p>
+            </li>
+            
+
+            <li>
+                <picture>
+                    <source srcset="planetas/neptuno.webp" type="img/webp">
+                    <source srcset="planetas/neptuno.png" type="img/png">
+                    <img width="100" height="100" src="planetas/neptuno.png" alt="System Image">
+                </picture>
+                <p>Neptuno</p>
+            </li>
+
+            <li>
+                <picture>
+                    <source srcset="planetas/mercurio.webp" type="img/webp">
+                    <source srcset="planetas/mercurio.png" type="img/png">
+                    <img width="100" height="100" src="planetas/mercurio.png" alt="System Image">
+                </picture>
+                <p>Mercurio</p>
+            </li>
+
+            <li>
+                <picture>
+                    <source srcset="planetas/venus.webp" type="img/webp">
+                    <source srcset="planetas/venus.png" type="img/png">
+                    <img width="100" height="100" src="planetas/venus.png" alt="System Image">
+                </picture>
+                <p>Venus</p>
+            </li>
+
+            <li>
+                <picture>
+                    <source srcset="planetas/tierra.webp" type="img/webp">
+                    <source srcset="planetas/tierra.png" type="img/png">
+                    <img width="100" height="100" src="planetas/tierra.png" alt="System Image">
+                </picture>
+                <p>Tierra</p>
+            </li>
+
+            <li>
+                <picture>
+                    <source srcset="planetas/marte.webp" type="img/webp">
+                    <source srcset="planetas/marte.png" type="img/png">
+                    <img width="100" height="100" src="planetas/marte.png" alt="System Image">
+                </picture>
+                <p>Marte</p>
+            </li>
+
+            <li>
+                <picture>
+                    <source srcset="planetas/jupiter.webp" type="img/webp">
+                    <source srcset="planetas/jupiter.png" type="img/png">
+                    <img width="100" height="100" src="planetas/jupiter.png" alt="System Image">
+                </picture>
+                <p>Jupiter</p>
+            </li>
+
+            <li>
+                <picture>
+                    <source srcset="planetas/saturno.webp" type="img/webp">
+                    <source srcset="planetas/saturno.png" type="img/png">
+                    <img width="100" height="100" src="planetas/saturno.png" alt="System Image">
+                </picture>
+                <p>Saturno</p>
+            </li>
+
+            
+            <li>
+                <picture>
+                    <source srcset="planetas/urano.webp" type="img/webp">
+                    <source srcset="planetas/urano.png" type="img/png">
+                    <img width="100" height="100" src="planetas/urano.png" alt="System Image">
+                </picture>
+                <p>Urano</p>
+            </li>
+            
+
+            <li>
+                <picture>
+                    <source srcset="planetas/neptuno.webp" type="img/webp">
+                    <source srcset="planetas/neptuno.png" type="img/png">
+                    <img width="100" height="100" src="planetas/neptuno.png" alt="System Image">
+                </picture>
+                <p>Neptuno</p>
+            </li>
+
+            <li>
+                <picture>
+                    <source srcset="planetas/mercurio.webp" type="img/webp">
+                    <source srcset="planetas/mercurio.png" type="img/png">
+                    <img width="100" height="100" src="planetas/mercurio.png" alt="System Image">
+                </picture>
+                <p>Mercurio</p>
+            </li>
+        </ul>
+    </main>
+
+
+
+<!--LInk js-->
+<script src="app.js"></script>
+</body>
+</html>

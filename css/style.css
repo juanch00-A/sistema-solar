@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #f1f1f1;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+img{
+    width: 100%;
+}
+
+/*Contenedor*/
+
+/*
+.container{
+    display: none; 
+}
+*/
+
+/*Contenedor*/
+
+.menu{
+    width: 95%;
+    margin-inline: auto;
+    padding-top: 10px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}   
+
+@media (min-width: 768px) {
+    .menu{
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+/*Logo*/
+
+.logo{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 10px;
+}
+
+.logo--name{
+    color: #f1f1f1;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.logo--name span{
+    color: rgb(248,194,0);
+}
+
+@media (min-width: 768px) {
+    .logo--name{
+        font-size: 30px;
+    }
+}
+
+.logo img{
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+}
+
+@media (min-width:768px){
+    .logo img{
+        display: none;
+    }
+}
+
+.menu--navegation{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 70px;
+    display: none; 
+}
+
+@media (min-width:768px){
+    .menu--navegation{
+        position: static;
+        width: auto;
+    }
+}
+
+/*Contenedor Lista Navegacion*/
+
+.navegation{
+    background-color: black;
+    padding: 10px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    position: relative;
+    z-index: 1;
+}
+
+@media (min-width: 768px) {
+    .navegation{
+        flex-direction: row;
+        gap: 20px;
+    }
+}
+
+.navegation li{
+    width: 100%;
+    text-align: center;
+}
+
+.navegation li a{
+    display: block;
+    padding: 10px;
+}
+
+.navegation li:last-of-type{
+    width: auto;
+}
+
+.navegation li a:hover{
+    background-color: rgb(248,194,0);
+}
+
+.navegation li:last-of-type:hover{
+    background-color: transparent;
+}
+
+/*Formulario -lupa y el input*/
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(62,62,62);
+    padding: 5px;
+    border-radius:10px ;
+}
+
+.form label{
+    display: flex;
+    justify-content: center;
+    width: 20px;
+}
+
+.form input{
+    color: white;
+    padding: 5px;
+    background-color: transparent;
+}
+
+/*Clase para que aparezca el cotenido*/
+
+.resposive--dinamico{
+    display: block;
+}
+
+/*Contenedor Banner*/
+
+.universe{
+    background-image: linear-gradient(to bottom, black 0%, rgba(0,0,0,0.62)50% ,black 100%), url('../img/universo.jpeg');
+    background-repeat: no-repeat ;
+    background-size: cover;
+    background-position: center;
+    height: 95vh;
+    overflow: hidden;
+}
+
+.container--universe{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 95vh;
+}
+
+@media (min-width: 768px) {
+    .container--universe{
+        flex-direction: row;
+    }
+}
+
+.universe--info{
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+.universe--info p{
+    font-size: 20px;
+}
+@media (min-width: 768px) {
+    .universe--info{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+}
+
+.btn--info{
+    margin-top: 30px;
+}
+
+.btn--info a{
+    background-color: rgb(248,194,0);
+    border: 2px solid rgb(248,194,0);
+    border-radius: 10px;
+    padding: 10px;
+    color: black;
+}
+
+.btn--info a:hover{
+    background-color: transparent;
+    color: white;
+}
+
+/*Planetas animation*/
+
+.planets{
+    width: 80%;
+    height: 70%;
+    position: relative;
+}
+
+.planets img{
+    position: absolute;
+    max-width: 500px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+
+@media (min-width: 768px) {
+    .planets img{
+        margin-block: auto;
+        margin-inline-start: auto;
+        margin-inline-end: 0 ;
+        max-width: 400px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .planets img{
+        max-width: 800px;
+    }
+}
+
+.planets li:nth-child(odd) img{
+    animation: rotacionImpar 10s linear infinite;
+}
+
+.planets li:nth-child(even) img{
+    animation: rotacionPar 10s linear infinite;
+}
+
+.planets li:nth-child(1) img{
+    animation: rotacionSol 30s linear infinite;
+}
+
+@keyframes rotacionSol{
+    0% {
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes rotacionImpar{
+    0% {
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes rotacionPar{
+    0% {
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/*Scroll Infinito*/
+
+.container--planets{
+    padding-top: 40px;
+    padding-bottom: 10px;
+  /*  display: none; */
+}
+
+.list--planets{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    gap: 10px;
+    overflow: hidden;
+}
+
+.list--planets::-webkit-scrollbar{
+    width: 0;
+}
+
+.list--planets li{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgb(32, 32, 32);
+    transition: background-color .5s ease-in;
+}
+
+.list--planets li:hover{
+    background-color: rgb(248, 194, 0);
+    cursor: pointer;
+}
+
+.list--planets li img{
+    width: 100px;
+}
+
+.list--planets p{
+    color: #f1f1f1;
+    font-weight: bold;
+}
+
+.list--planets li{
+    animation: scrollInfinito 15s linear infinite;
+}
+
+@keyframes scrollInfinito {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(calc(-210px * 6));
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
